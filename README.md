@@ -1,14 +1,37 @@
-# Get Started
-Git Repo with functioning examples to help you Get Started with the Rafay Kubernetes Operations Platform. 
+## Turnkey Policies
+The following outline lists the available prepackaged turnkey policies along with their corresponding constraints. These packages can be edited as needed to meet your specific requirements.
 
-## GPU on Amazon EKS
-- Provision an Amazon EKS cluster with GPU worker node groups in minutes 
-- Configure and provision a custom cluster blueprint with the Nvidia GPU Operator
-- Deploy a GPU workload to the EKS cluster and view the integrated GPU dashboard 
+### PSP Restricted
+allow-privilege-escalation-container-custom
+allowed-users-custom
+app-armor-custom
+flex-volumes-custom
+forbidden-sysctls-custom
+host-filesystem-custom
+host-namespace-custom
+host-network-ports-custom
+linux-capabilities-custom
+privileged-container-custom
+proc-mount-custom
+read-only-root-filesystem-custom
+se-linux-custom
+seccomp-custom
+volume-types-custom
 
-## Amazon EKS with Cloudwatch 
-- Provision an Amazon EKS Cluster with a custom cluster blueprint with the Cloudwatch addon 
-- View metrics in Container Insights 
+### Reliability
+disallowed-tags-custom
+replica-limits-custom
+required-annotations-custom
+required-labels-custom
+required-probes-custom
 
-## Amazon EKS with Karpenter
-- Provision an Amazon EKS Cluster with a custom cluster blueprint with the Karpenter cluster auto scaler 
+### Security
+allowed-repos-custom
+block-nodeport-services-custom
+https-only-custom
+image-digests-custom
+
+
+### Operational Efficiency
+container-limits-custom
+container-resource-ratios-custom
